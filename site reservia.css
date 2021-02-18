@@ -1,0 +1,162 @@
+/*
+    # = id
+    . = class
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body
+{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+h3
+{
+    font-weight: bold;
+}
+
+li
+{
+    list-style-type: none;
+    vertical-align: top;
+}
+
+header
+{
+    background: lightblue;
+    padding: 30px;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul
+{
+    display: inline-block;
+    vertical-align: top;
+    flex-direction: row;
+}
+
+nav ul li
+{
+    padding: 0 20px;
+}
+
+.logo
+{
+    width: 100px;
+}
+
+main
+{
+    background: lightsalmon;
+    /* height: 800px; */
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#encart_hébergements
+{
+    border-radius: 15px;
+    background-color: limegreen;
+    width: calc(60% - 40px);
+    padding: 15px 15px 20px 20px;
+}
+
+#hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element
+{
+    -moz-border-bottom-right-radius: 15px;
+    -moz-border-bottom-left-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    border: solid white 4px;
+    background-color: lightcyan;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 15px;
+    padding-left: 10px;
+    padding-top: 90px;
+}
+
+.photo_herbergement
+{
+    border: solid white 4px;
+    width: 150px;
+    -moz-border-top-right-radius: 15px;
+    -moz-border-top-left-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-top-left-radius: 15px;
+}
+
+#encart_populaires
+{
+    width:40%;
+    border-radius: 15px;
+    background-color: purple;
+}
+
+.element_populaire
+{
+    -moz-border-bottom-right-radius: 15px;
+    -moz-border-top-right-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-top-right-radius: 15px;
+    border: solid white 4px;
+    background-color: aquamarine;
+    width: auto;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+    padding-left: 250px;
+}
+
+#encart_activites
+{
+    width:100%;
+    border-radius: 15px;
+    background-color: gold;
+    padding: 20px;
+}
+
+.activité
+{
+    -moz-border-bottom-right-radius: 15px;
+    -moz-border-bottom-left-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    border: solid white 4px;
+    background-color: lightcyan;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    padding-left: 10px;
+    padding-top: 90px;
+
+}
