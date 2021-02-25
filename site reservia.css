@@ -20,6 +20,7 @@ a
 h3
 {
     font-weight: bold;
+    padding-left: 10px;
 }
 
 li
@@ -30,7 +31,7 @@ li
 
 header
 {
-    background: lightblue;
+    background: white;
     padding: 30px;
 }
 
@@ -51,6 +52,8 @@ ul
 nav ul li
 {
     padding: 0 20px;
+    display: inline-block;
+    
 }
 
 .logo
@@ -58,9 +61,223 @@ nav ul li
     width: 100px;
 }
 
+h5
+{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.header_sous_titre
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.recherche
+{
+    border-radius: 14px;
+    height: 50px;
+    width: 360px;
+    background-color: white;
+    display: flex;
+    margin-top: 15px;
+    border: #F2F2F2 solid 1px;
+}
+
+.fa-map-marker-alt
+{
+    padding-left: 18px;
+    padding-top: 12px;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    height: 36px;
+    width: 60px;
+}
+
+.ville_recherche
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    padding-left: 20px;
+    line-height: 25px;
+}
+
+.bouton_recherche
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 50px;
+    width: 180px;
+    background-color: #0065FC;
+    margin-left: 100px;
+    line-height: 45px;
+    padding-left: 19px;
+}
+
+.debut_de_ligne_filtres
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+    display:inline;
+    float:left;
+    margin-right: 30px;
+    line-height: 75px;
+}
+
+.filtres
+{
+    border-radius: 35px;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+    border: #F2F2F2 solid 1px;
+    display:inline;
+    float:left;
+}
+
+.fa-money-bill-wave
+{
+    padding-left: 13px;
+    padding-top: 13px;
+    font-size: 18px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    height: 35px;
+    width: 35px;
+}
+
+.eco
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+.bulle2
+{
+    border-radius: 35px;
+    height: 47px;
+    width: 160px;
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+    border: #F2F2F2 solid 1px;
+    display:inline;
+    float:left;
+}
+
+.fa-child
+{
+    padding-left: 13px;
+    padding-top: 13px;
+    font-size: 20px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    height: 35px;
+    width: 35px;
+}
+
+.familial
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+.bulle3
+{
+    border-radius: 35px;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+    border: #F2F2F2 solid 1px;
+    display:inline;
+    float:left;
+}
+
+.fa-heart
+{
+    padding-left: 13px;
+    padding-top: 13px;
+    font-size: 18px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    height: 35px;
+    width: 35px;
+}
+
+.Romantique
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+.bulle4
+{
+    border-radius: 35px;
+    height: 47px;
+    width: 250px;
+    display: flex;
+    margin-top: 15px;
+    border: #F2F2F2 solid 1px;
+}
+
+.fa-dog
+{
+    padding-left: 13px;
+    padding-top: 13px;
+    font-size: 18px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    height: 35px;
+    width: 35px;
+}
+
+.Animaux
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    line-height: 45px;
+    margin-left: 15px;
+}
+
 main
 {
-    background: lightsalmon;
+    background: white;
     /* height: 800px; */
     padding: 30px;
     display: flex;
@@ -71,92 +288,210 @@ main
 #encart_hébergements
 {
     border-radius: 15px;
-    background-color: limegreen;
+    background-color: #F2F2F2;
     width: calc(60% - 40px);
     padding: 15px 15px 20px 20px;
+}
+
+.nom_auberge
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    padding-left: 8px;
+    margin-bottom: 0px;
+}
+
+.tarif_nuit
+{
+    font-family: 'Raleway';
+    font-weight: lighter;
+    color: black;
+    font-size: 11px;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.prix
+{
+    font-weight: bold;
+}
+
+.etoiles
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+}
+
+.fa-star
+{
+    font-size:9px;
+    color:#0065FC;
+    margin-bottom: 0px;
+    margin-top: 1px;
 }
 
 #hebergements
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .element
 {
-    -moz-border-bottom-right-radius: 15px;
-    -moz-border-bottom-left-radius: 15px;
-    -webkit-border-bottom-right-radius: 15px;
-    -webkit-border-bottom-left-radius: 15px;
-    border: solid white 4px;
-    background-color: lightcyan;
-    width: 250px;
-    height: 100px;
+    border-radius: 15px;
+    background-color: white;
     display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    margin: 15px;
-    padding-left: 10px;
-    padding-top: 90px;
+    flex: 0 0 calc(33.33% - 20px);
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 15px;
+    padding: 4px;
 }
 
 .photo_herbergement
 {
-    border: solid white 4px;
-    width: 150px;
-    -moz-border-top-right-radius: 15px;
-    -moz-border-top-left-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    -webkit-border-top-left-radius: 15px;
+    width: 100%;
+    height: 108px;
+    /* On adapte l'image au bloc */
+    object-fit: cover;
+    /* bords arrondis en haut */
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-#encart_populaires
+.arrangement_populaire
 {
-    width:40%;
-    border-radius: 15px;
-    background-color: purple;
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    margin-left: 15px;
+    display:inline;
+    float:left;
+    margin-right: 30px;
+    line-height: 75px;
 }
 
 .element_populaire
 {
-    -moz-border-bottom-right-radius: 15px;
-    -moz-border-top-right-radius: 15px;
-    -webkit-border-bottom-right-radius: 15px;
-    -webkit-border-top-right-radius: 15px;
-    border: solid white 4px;
-    background-color: aquamarine;
-    width: auto;
-    height: 200px;
+    border-radius: 15px;
+    background-color: white;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    margin: 15px;
-    padding-left: 250px;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 15px;
+    padding: 4px;
+}
+
+#encart_populaires
+{
+    width:35%;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+.photo_populaire
+{
+    width: 170px;
+    height: 100%;
+    /* On adapte l'image au bloc */
+    object-fit: cover;
+    /* bords arrondis en haut */
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.nom_populaire
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    padding-left: 8px;
+    margin-bottom: 0px;
+}
+
+.prix_populaire
+{
+    font-family: 'Raleway';
+    font-weight: lighter;
+    color: black;
+    font-size: 11px;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    margin-top: 4px;
 }
 
 #encart_activites
 {
     width:100%;
-    border-radius: 15px;
-    background-color: gold;
-    padding: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    display:inline;
+    float:left;
+}
+
+.photo_activités
+{
+    width: 70px;
+    height: 130px;
+    /* On adapte l'image au bloc */
+    object-fit: cover;
+    /* bords arrondis en haut */
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .activité
-{
-    -moz-border-bottom-right-radius: 15px;
-    -moz-border-bottom-left-radius: 15px;
-    -webkit-border-bottom-right-radius: 15px;
-    -webkit-border-bottom-left-radius: 15px;
-    border: solid white 4px;
-    background-color: lightcyan;
-    width: 250px;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    margin: 15px;
-    padding-left: 10px;
-    padding-top: 90px;
 
+{
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex: 0 0 calc(25% - 20px);
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 15px;
+    padding: 4px;
+}
+
+footer
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer ul
+{
+    padding: 0;
+    width: 33%;
+}
+
+.gras
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    color: black;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.light
+{
+    font-family: 'Raleway';
+    font-weight: lighter;
+    color: black;
+    font-size: 11px;
+    padding-bottom: 10px;
 }
