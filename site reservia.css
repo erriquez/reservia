@@ -179,11 +179,39 @@ h5
     margin-left: 15px;
 }
 
+.nombre_logements
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.petite_phrase
+{
+    font-family: 'Raleway';
+    font-weight: lighter;
+    color: black;
+    font-size: 11px;
+    padding-top: 15px;
+    padding-left: 8px;
+}
+
+.fa-info
+{
+    font-size: 10px;
+    color: #0065FC;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-top: 15px;
+    height: 14px;
+    width: 14px;
+}
+
 main
 {
     background: white;
     /* height: 800px; */
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -279,6 +307,23 @@ main
     border-top-left-radius: 15px;
 }
 
+#encart_populaires
+{
+    width: calc(25% - 40px);
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+#populaires
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .element_populaire
 {
     border-radius: 15px;
@@ -289,17 +334,6 @@ main
     margin-bottom: 15px;
     padding: 4px;
     box-shadow: 5px 5px 5px rgb(218, 216, 216);
-}
-
-#encart_populaires
-{
-    width: calc(25% - 40px);
-    border-radius: 15px;
-    background-color: #F2F2F2;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 15px;
 }
 
 .photo_populaire
@@ -382,7 +416,7 @@ footer
 
 footer ul
 {
-    width: 33%;
+    width: 320px;
 }
 
 .gras
