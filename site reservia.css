@@ -324,6 +324,12 @@ main
     flex-wrap: wrap;
 }
 
+.h3 fa-chart-line
+{
+    text-align: right;
+    padding-left: 2Opx;
+}
+
 .element_populaire
 {
     border-radius: 15px;
@@ -371,7 +377,7 @@ main
 #activités
 {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     align-content: space-between;
     margin-bottom: 15px;
 }
