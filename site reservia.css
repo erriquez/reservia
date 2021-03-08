@@ -9,12 +9,14 @@ body
 {
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    color: black;
 }
 
 a
 {
     text-decoration: none;
     color: black;
+    font-size: 12px;
 }
 
 h3
@@ -32,7 +34,6 @@ li
 
 header
 {
-    background: white;
     padding: 30px;
 }
 
@@ -91,20 +92,18 @@ h5
 .fa-map-marker-alt
 {
     padding-left: 18px;
+    padding-right: 18px;
     padding-top: 12px;
     font-size: 20px;
     background-color: #F2F2F2;
     border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
     height: 38px;
-    width: 60px;
 }
 
 .ville_recherche
 {
-    font-family: 'Raleway';
     font-weight: bold;
-    color: black;
     font-size: 15px;
     padding-left: 20px;
     line-height: 25px;
@@ -113,28 +112,23 @@ h5
 
 .bouton_recherche
 {
-    font-family: 'Raleway';
     font-weight: bold;
     color: white;
     font-size: 15px;
     border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
     height: 50px;
-    width: 180px;
     background-color: #0065FC;
     line-height: 45px;
     padding-left: 19px;
+    padding-right: 19px;
 }
 
 .debut_de_ligne_filtres
 {
-    font-family: 'Raleway';
     font-weight: bold;
-    color: black;
     font-size: 18px;
     margin-left: 15px;
-    display:inline;
-    float:left;
     margin-right: 30px;
     line-height: 75px;
 }
@@ -173,7 +167,6 @@ h5
 {
     font-family: 'Raleway';
     font-weight: bold;
-    color: black;
     font-size: 18px;
     line-height: 45px;
     margin-left: 15px;
@@ -181,19 +174,8 @@ h5
 
 .nombre_logements
 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.petite_phrase
-{
-    font-family: 'Raleway';
-    font-weight: lighter;
-    color: black;
-    font-size: 11px;
-    padding-top: 15px;
-    padding-left: 8px;
+    font-size: 12px;
+    padding-left: 5px;
 }
 
 .fa-info
@@ -202,15 +184,14 @@ h5
     color: #0065FC;
     border-radius: 10px;
     border: 1px solid;
-    margin-top: 15px;
+    margin-top: 12px;
     height: 14px;
     width: 14px;
+    margin-left: 12px;
 }
 
 main
 {
-    background: white;
-    /* height: 800px; */
     padding: 0 30px 30px 30px;
     display: flex;
     flex-direction: row;
@@ -227,9 +208,7 @@ main
 
 .nom_auberge
 {
-    font-family: 'Raleway';
     font-weight: bold;
-    color: black;
     font-size: 14px;
     padding-left: 8px;
     margin-bottom: 0px;
@@ -237,9 +216,7 @@ main
 
 .tarif_nuit
 {
-    font-family: 'Raleway';
     font-weight: lighter;
-    color: black;
     font-size: 11px;
     padding-left: 8px;
     margin-bottom: 0px;
@@ -307,6 +284,14 @@ main
     border-top-left-radius: 15px;
 }
 
+h4
+{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
 #encart_populaires
 {
     width: calc(25% - 40px);
@@ -324,10 +309,11 @@ main
     flex-wrap: wrap;
 }
 
-.h3 fa-chart-line
+#encart_populaires h3
 {
-    text-align: right;
-    padding-left: 2Opx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .element_populaire
@@ -340,12 +326,14 @@ main
     margin-bottom: 15px;
     padding: 4px;
     box-shadow: 5px 5px 5px rgb(218, 216, 216);
+    width: 100%;
+    height: 120px;
+    position: relative;
 }
 
 .photo_populaire
 {
     width: 110px;
-    height: 120px;
     /* On adapte l'image au bloc */
     object-fit: cover;
     /* bords arrondis en haut */
@@ -355,9 +343,7 @@ main
 
 .nom_populaire
 {
-    font-family: 'Raleway';
     font-weight: bold;
-    color: black;
     font-size: 14px;
     padding-left: 8px;
     margin-bottom: 0px;
@@ -365,21 +351,37 @@ main
 
 .prix_populaire
 {
-    font-family: 'Raleway';
     font-weight: lighter;
-    color: black;
     font-size: 11px;
     padding-left: 8px;
     margin-bottom: 0px;
     margin-top: 4px;
 }
 
+.element_populaire .etoiles
+{
+    position: absolute;
+    bottom: 8px;
+}
+
+#encart_activites
+{
+    width: 100%;
+}
+
 #activités
 {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
     margin-bottom: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#activités .colonne
+{
+    height: 300px;
 }
 
 .element_activités
@@ -390,29 +392,34 @@ main
     flex-direction: column;
     align-content: center;
     margin-bottom: 15px;
-    margin-right: 30px;
-    padding: 4px;
     box-shadow: 5px 5px 5px rgb(202, 201, 201);
 }
 
 .photo_activités
 {
-    width: 230px;
-    height: 250px;
     /* On adapte l'image au bloc */
     object-fit: cover;
     /* bords arrondis en haut */
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    width: 250px;
+}
+
+.colonne_grande .photo_activités
+{
+    height: 260px;
+}
+
+.colonne_petites .photo_activités
+{
+    height: 100px;
 }
 
 .nom_activités
 {
-    font-family: 'Raleway';
     font-weight: bold;
-    color: black;
     font-size: 12px;
-    padding-left: 8px;
+    padding-left: 12px;
 }
 
 footer
@@ -427,18 +434,14 @@ footer ul
 
 .gras
 {
-    font-family: 'Raleway';
     font-weight: bold;
-    color: black;
     font-size: 12px;
     padding-bottom: 10px;
 }
 
 .light
 {
-    font-family: 'Raleway';
     font-weight: lighter;
-    color: black;
     font-size: 11px;
     padding-bottom: 10px;
 }

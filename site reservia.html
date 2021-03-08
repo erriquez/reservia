@@ -30,10 +30,8 @@
                 <input type="text" value="Marseille, France" class="ville_recherche">
                 <span class="bouton_recherche">Recherche</span>
             </div>
-            <div>
-                <span class="debut_de_ligne_filtres">Filtres</span>
-            </div>
             <div class="filtres">
+                <span class="debut_de_ligne_filtres">Filtres</span>
                 <a href="#" class="filtre">
                     <i class="fas fa-money-bill-wave"></i>
                     <span>Économique</span>
@@ -50,6 +48,9 @@
                     <i class="fas fa-dog"></i>
                     <span>Animaux autorisés</span>
                 </a>
+            </div>
+            <div>
+                <i class="fas fa-info"></i><span class="nombre_logements">Plus de 500 logements sont disponibles dans cette ville</span>
             </div>
         </header>
 
@@ -101,10 +102,14 @@
                         <p class="etoiles">
                             <i class="fas fa-star bleue"></i><i class="fas fa-star bleue"></i><i class="fas fa-star bleue"></i><i class="fas fa-star bleue"></i><i class="fas fa-star bleue"></i>  
                     </div>
+                    <h4>Afficher plus</h4>
                 </div>
             </article>
             <aside id="encart_populaires">
-                <h3>Les plus populaires<i class="fas fa-chart-line"></i></h3>
+                <h3>
+                    <span>Les plus populaires</span>
+                    <i class="fas fa-chart-line"></i>
+                </h3>
                 <div id="populaires">
                     
                     <div class="element_populaire">
@@ -140,25 +145,39 @@
             <section id="encart_activites">
                 <h3>Activités à Marseille</h3>
                 <div id="activités">
+                    <div class="colonne colonne_grande">
+                        <div class="element_activités">
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="photo_activités">
+                            <p class="nom_activités">Vieux Port</p>
+                        </div>
+                    </div>
+                    <div class="colonne colonne_petites">
+                        <div class="element_activités">
+                            <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="photo_activités">
+                            <p class="nom_activités">Fort de Pomègues</p>
+                        </div>
+                        <div class="element_activités">
+                            <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" class="photo_activités">
+                            <p class="nom_activités">Îles du Frioul</p>
+                        </div>
+                    </div>
                     
-                    <div class="element_activités">
-                        <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="photo_activités">
-                        <p class="nom_activités">Vieux Port</p>
+                    <div class="colonne colonne_grande">
+                        <div class="element_activités">
+                            <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="photo_activités">
+                            <p class="nom_activités">Parc National des Calanques</p>
+                        </div>
                     </div>
 
-                    <div class="element_activités">
-                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="photo_activités">
-                        <p class="nom_activités">Fort de Pomègues</p>
-                    </div>
-
-                    <div class="element_activités">
-                        <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="photo_activités">
-                        <p class="nom_activités">Parc National des Calanques</p>
-                    </div>
-
-                    <div class="element_activités">
-                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="photo_activités">
-                        <p class="nom_activités">Notre-Dame-de-la-Garde</p>
+                    <div class="colonne colonne_petites">
+                        <div class="element_activités">
+                            <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="photo_activités">
+                            <p class="nom_activités">Notre-Dame-de-la-Garde</p>
+                        </div>
+                        <div class="element_activités">
+                            <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" class="photo_activités">
+                            <p class="nom_activités">Parc Longchamp</p>
+                        </div>
                     </div>
                 </div>
             </section>
