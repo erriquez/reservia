@@ -1,0 +1,450 @@
+/*
+    # = id
+    . = class
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body
+{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+h3
+{
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+li
+{
+    list-style-type: none;
+    vertical-align: top;
+}
+
+header
+{
+    padding: 30px;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul
+{
+    display: inline-block;
+    vertical-align: top;
+    flex-direction: row;
+}
+
+nav ul li
+{
+    padding: 0 20px;
+    display: inline-block;
+    
+}
+
+.logo
+{
+    width: 100px;
+}
+
+h5
+{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.header_sous_titre
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.recherche
+{
+    border-radius: 14px;
+    height: 50px;
+    width: 360px;
+    background-color: white;
+    display: flex;
+    margin-top: 15px;
+    border: #F2F2F2 solid 1px;
+}
+
+.fa-map-marker-alt
+{
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 12px;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    height: 38px;
+}
+
+.ville_recherche
+{
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 20px;
+    line-height: 25px;
+    border: 0;
+}
+
+.bouton_recherche
+{
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    height: 50px;
+    background-color: #0065FC;
+    line-height: 45px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.debut_de_ligne_filtres
+{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 30px;
+    line-height: 75px;
+}
+
+.filtres
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.filtre
+{
+    border-radius: 35px;
+    height: 47px;
+    display: flex;
+    margin-top: 15px;
+    margin-right: 20px;
+    padding-right: 15px;
+    border: #F2F2F2 solid 1px;
+}
+
+.filtre i
+{
+    padding-left: 13px;
+    padding-top: 13px;
+    font-size: 20px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 35px;
+    height: 35px;
+    width: 35px;
+}
+
+.filtre span
+{
+    font-family: 'Raleway';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 45px;
+    margin-left: 15px;
+}
+
+.nombre_logements
+{
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.fa-info
+{
+    font-size: 10px;
+    color: #0065FC;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-top: 12px;
+    height: 14px;
+    width: 14px;
+    margin-left: 12px;
+}
+
+main
+{
+    padding: 0 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#encart_hébergements
+{
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    width: 100%;
+    max-width: 500px;
+    min-width: 375px;
+    padding: 15px 15px 20px 20px;
+}
+
+.nom_auberge
+{
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 8px;
+    margin-bottom: 0px;
+}
+
+.tarif_nuit
+{
+    font-weight: lighter;
+    font-size: 11px;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.prix
+{
+    font-weight: bold;
+}
+
+.etoiles
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+}
+
+
+.fa-star
+{
+    font-size:9px;
+    margin-bottom: 0px;
+    margin-top: 1px;
+}
+
+.bleue
+{
+    color: #0065FC;
+}
+
+.gris
+{
+    color: #F2F2F2;
+}
+
+#hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.element
+{
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    max-width: 500px;
+    min-width: 375px;
+    margin-bottom: 15px;
+    padding: 4px;
+    box-shadow: 5px 5px 5px rgb(202, 201, 201);
+}
+
+.photo_herbergement
+{
+    width: 100%;
+    height: 108px;
+    /* On adapte l'image au bloc */
+    object-fit: cover;
+    /* bords arrondis en haut */
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+h4
+{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#encart_populaires
+{
+    width: calc(25% - 40px);
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+}
+
+#populaires
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#encart_populaires h3
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.element_populaire
+{
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-bottom: 15px;
+    padding: 4px;
+    box-shadow: 5px 5px 5px rgb(218, 216, 216);
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+.photo_populaire
+{
+    width: 110px;
+    /* On adapte l'image au bloc */
+    object-fit: cover;
+    /* bords arrondis en haut */
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.nom_populaire
+{
+    font-weight: bold;
+    font-size: 14px;
+    padding-left: 8px;
+    margin-bottom: 0px;
+}
+
+.prix_populaire
+{
+    font-weight: lighter;
+    font-size: 11px;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+
+.element_populaire .etoiles
+{
+    position: absolute;
+    bottom: 8px;
+}
+
+#encart_activites
+{
+    width: 100%;
+}
+
+#activités
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#activités .colonne
+{
+    height: 300px;
+}
+
+.element_activités
+{
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px rgb(202, 201, 201);
+}
+
+.photo_activités
+{
+    /* On adapte l'image au bloc */
+    object-fit: cover;
+    /* bords arrondis en haut */
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 250px;
+}
+
+.colonne_grande .photo_activités
+{
+    height: 260px;
+}
+
+.colonne_petites .photo_activités
+{
+    height: 100px;
+}
+
+.nom_activités
+{
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 12px;
+}
+
+footer
+{
+    background-color: #F2F2F2;
+}
+
+footer ul
+{
+    width: 320px;
+}
+
+.gras
+{
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.light
+{
+    font-weight: lighter;
+    font-size: 11px;
+    padding-bottom: 10px;
+}
