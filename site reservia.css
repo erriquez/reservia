@@ -174,20 +174,27 @@ h5
 
 .nombre_logements
 {
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 5px;
+}
+
+.info
+{
+    display: inline-block;
+    border-radius: 10px;
+    border: 1px solid #0065FC;
+    height: 14px;
+    width: 14px;
+    position: relative;
 }
 
 .fa-info
 {
     font-size: 10px;
     color: #0065FC;
-    border-radius: 10px;
-    border: 1px solid;
-    margin-top: 12px;
-    height: 14px;
-    width: 14px;
-    margin-left: 12px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
 }
 
 main
@@ -444,4 +451,65 @@ footer ul
     font-weight: lighter;
     font-size: 11px;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1023px) {
+    main {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #encart_hébergements{
+        width: 100%;
+        margin: 0;
+        order: 2;
+        background-color: white;
+    }
+
+    #encart_populaires{
+        width: 100%;
+        margin: 0;
+        order: 1;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    #encart_activites{
+        width: 100%;
+        margin: 0;
+        order: 3;
+
+    }
+
+    #activités{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        flex-direction: column;
+    }
+
+    .photo_activités{
+        object-fit: cover;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        width: 100%;
+    }
+
+    .colonne_grande .photo_activités{
+    height: 180px;
+    }
+
+    .colonne_petites .photo_activités{
+    height: 180px;
+    }
+
+    #hebergements{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 }
