@@ -10,6 +10,7 @@ body
     margin: 0;
     font-family: 'Raleway', sans-serif;
     color: black;
+    overflow-x: hidden;
 }
 
 a
@@ -122,6 +123,10 @@ h5
     line-height: 45px;
     padding-left: 19px;
     padding-right: 19px;
+}
+
+.bouton_recherche.icone {
+    display: none;
 }
 
 .debut_de_ligne_filtres
@@ -389,6 +394,7 @@ h4
 #activités .colonne
 {
     height: 300px;
+    width: 23%;
 }
 
 .element_activités
@@ -409,7 +415,7 @@ h4
     /* bords arrondis en haut */
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
-    width: 250px;
+    width: 100%;
 }
 
 .colonne_grande .photo_activités
@@ -457,58 +463,94 @@ footer ul
     main {
         flex-direction: column;
         align-content: center;
+        padding: 0;
     }
 
-    #encart_hébergements{
+    .recherche {
+        width: 310px;
+    }
+
+    .bouton_recherche.mot {
+        display: none;
+    }
+    
+    .bouton_recherche.icone {
+        display: inline;
+        border-radius: 14px;
+    }
+
+    .debut_de_ligne_filtres {
         width: 100%;
-        margin: 0;
+    }
+
+    .info
+    {
+        margin-top: 30px;
+    }
+
+    #encart_hébergements {
+        width: 100%;
+        padding: 0;
         order: 2;
         background-color: white;
     }
 
-    #encart_populaires{
+    #hebergements {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #encart_populaires {
         width: 100%;
         margin: 0;
         order: 1;
         background-color: #F2F2F2;
-        border-radius: 0px;
-        padding: 0px;
+        border-radius: 0;
+        padding: 0;
     }
 
-    h3{
+    #populaires {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    h3 {
         font-size: 24px;
+        padding-right: 20px;
     }
 
-    #encart_activites{
+    #encart_activites {
         width: 100%;
         margin: 0;
         order: 3;
-
     }
 
-    #activités{
+    #activités {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 15px;
         flex-direction: column;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
-    .photo_activités{
+    #activités .colonne {
+        height: auto;
+        width: 100%;
+    }
+
+    .photo_activités {
         object-fit: cover;
         border-top-right-radius: 15px;
         border-top-left-radius: 15px;
         width: 100%;
     }
 
-    .colonne_grande .photo_activités{
-    height: 180px;
+    .colonne_grande .photo_activités, .colonne_petites .photo_activités{
+        height: 180px;
     }
 
-    .colonne_petites .photo_activités{
-    height: 180px;
-    }
-
-    #hebergements{
+    #hebergements {
         flex-direction: column;
         flex-wrap: nowrap;
     }
