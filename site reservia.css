@@ -18,6 +18,7 @@ a
     text-decoration: none;
     color: black;
     font-size: 12px;
+
 }
 
 h3
@@ -45,6 +46,24 @@ nav
     justify-content: space-between;
 }
 
+.menu__item {
+    display: inline-block;
+  }
+  
+  .menu__item:before {
+   content: "";
+   display: block;
+   height: 0.25em;
+   width: 0%;
+   margin-bottom: 9px;
+   background-color: blue;
+   transition: width 0.4s;
+  }
+  
+  .menu__item:hover:before {
+   width: 100%;
+  }
+
 ul
 {
     display: inline-block;
@@ -56,7 +75,6 @@ nav ul li
 {
     padding: 0 20px;
     display: inline-block;
-    
 }
 
 .logo
@@ -466,6 +484,10 @@ footer ul
         padding: 0;
     }
 
+    /*nav a { text-decoration: none;padding:1rem }
+    nav
+    .underline { border-bottom: 3px solid blue; }*/
+
     .recherche {
         width: 310px;
     }
@@ -517,6 +539,7 @@ footer ul
     h3 {
         font-size: 24px;
         padding-right: 20px;
+        padding-left: 20px;
     }
 
     #encart_activites {
