@@ -512,6 +512,15 @@ footer ul
         display: block;
     }
 
+    .menu_heb
+    {
+        text-decoration: #0065FC underline 3px solid;
+        text-decoration-thickness: auto;
+        width: 100%;
+        font-size: 16px;
+        color: #0065FC;
+    }
+
     nav.nav_mobile .premlig
     {
         display: flex;
@@ -524,10 +533,19 @@ footer ul
         flex-direction: row;
     }
 
+    nav.nav_mobile .premlig a
+    {
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 14px;
+        color: #0065FC;
+    }
+
     nav.nav_mobile .seclig div
     {
         width:50%;
         text-align: center;
+        padding-top: 20px;
     }
 
     .recherche {
