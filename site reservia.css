@@ -544,13 +544,21 @@ footer ul
         color:black;
     }
 
-    nav.nav_mobile .seclig div
+    nav.nav_mobile .seclig .heb
     {
         width:50%;
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
-        border-bottom: solid 3px #0065FC
+    }
+
+    nav.nav_mobile .seclig .act
+    {
+        width:50%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: solid 3px #F2F2F2
     }
 
     .recherche {
