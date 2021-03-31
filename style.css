@@ -550,6 +550,7 @@ footer ul
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
+        border-bottom: solid 3px #0065FC
     }
 
     nav.nav_mobile .seclig .act
