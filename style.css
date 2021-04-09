@@ -49,14 +49,20 @@ header
     width: 100px;
 }
 
-nav.nav_pc
+nav
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
-nav.nav_pc a
+nav .div_logo
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% - 300px);
+}
+
+nav a
 {
     display: inline-block;
     vertical-align: top;
@@ -64,24 +70,33 @@ nav.nav_pc a
     margin: 0;
     padding: 0 20px;
     display: inline-block;
+    width: 100px;
+    text-align: center;
 }
 
-nav.nav_pc a:before {
+nav a.menu_inscr {
+    font-weight: bold;
+    color: #0065FC;
+}
+
+nav a:before {
     content: "";
     display: block;
     height: 0.2em;
     width: 0%;
     margin-bottom: 30px;
+}
+
+nav a.menu_heb:before, nav a.menu_act:before {
     background-color: #0065FC;
 }
 
-nav.nav_pc a:hover:before {
-    width: 100%;
+nav a.menu_heb:hover, nav a.menu_act:hover {
+    color: #0065FC;
 }
 
-nav.nav_mobile
-{
-    display:none;
+nav a:hover:before {
+    width: 100%;
 }
 
 h5
@@ -174,6 +189,11 @@ h5
     margin-right: 20px;
     padding-right: 15px;
     border: #F2F2F2 solid 1px;
+}
+
+.filtre:hover
+{
+    background-color: #f2f2f2;
 }
 
 .filtre i
@@ -495,71 +515,50 @@ footer ul
         padding: 0;
     }
 
-    
-    nav.nav_pc
-    {
-        display: none;
-    }
-
-    header nav > :not(.seclig), header > :not(nav)
-    {
+    header > :not(nav) {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
-    nav.nav_mobile
-    {
-        display: block;
+
+    nav {
+        flex-wrap: wrap;
     }
 
-    nav.nav_mobile .premlig
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    nav.nav_mobile .seclig
-    {
-        display: flex;
-        flex-direction: row;
-    }
-
-    nav.nav_mobile .premlig a
-    {
+    .div_logo {
+        order: 1;
+        width: calc(50% - 40px) !important;
         padding-top: 20px;
-        font-weight: bold;
-        font-size: 14px;
-        color: #0065FC;
+    }
+
+    .menu_inscr
+    {
+        order: 2;
+        width: calc(50% - 40px);
+        text-align: right;
     }
 
     .menu_heb
     {
         font-size: 16px;
         color: #0065FC;
+        order: 3;
+        width: calc(50% - 40px);
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: solid 3px #0065FC;
     }
 
     .menu_act
     {
         font-size: 16px;
         color:black;
-    }
-
-    nav.nav_mobile .seclig .heb
-    {
-        width:50%;
+        order: 4;
+        width: calc(50% - 40px);
         text-align: center;
         padding-top: 20px;
         padding-bottom: 20px;
-        border-bottom: solid 3px #0065FC
-    }
-
-    nav.nav_mobile .seclig .act
-    {
-        width:50%;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-bottom: solid 3px #F2F2F2
+        border-bottom: solid 3px #F2F2F2;
     }
 
     .recherche {
